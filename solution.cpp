@@ -29,8 +29,8 @@ bool is_prime(int x)
     return true;
 }
 
-// dp[x] == -1, hasn't calculated yet
-// dp[x] == -2, primality problem
+// dp[x].second == -1, hasn't calculated yet
+// dp[x].second == -2, primality problem
 pair<int,int> most_valuable_path(int x,int y)
 {
     if(is_prime(pyramid[x][y]))
